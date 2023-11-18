@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28503206625204a479af5fe69c912259, type: 3}
+  m_Name: Melee
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 6901989514461156843, guid: f0d1b062adcc9254ca8641dfd78b8017, type: 3}
+  id: 0
+  damage: 25
+  projectileSpeed: 5
+  rangeDistance: 5
+  shootSpeed: 0.8
+  numberOfProjectileToShoot: 5
+  spread: 0
+  chargerCapacity: 0
+  pushbackForce: 45
+  timerUntilNextPushback: 0.5

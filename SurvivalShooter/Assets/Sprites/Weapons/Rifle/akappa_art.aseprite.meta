@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 662d2372c75be3a4cb4f7f47cf74f663
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: akappa_art_Frame_0
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 214
+      width: 29
+      height: 12
+    spriteID: 9788b70089d483c4c8ee0ae3d7feef89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 214}
+  - name: akappa_art_Frame_2
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 234
+      width: 29
+      height: 12
+    spriteID: 5cd6c2fd1aeb1914987bb285c2fadbf4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 234}
+  - name: akappa_art_Frame_3
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 4
+      width: 29
+      height: 12
+    spriteID: 3a5666b3f51e6c74f846a7d8643214a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 4}
+  - name: akappa_art_Frame_4
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 24
+      width: 29
+      height: 12
+    spriteID: bf7a9cc838823bf489af494d7a24d990
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 24}
+  - name: akappa_art_Frame_6
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 44
+      width: 29
+      height: 12
+    spriteID: 2b389c870d78ed74cbc025283a468f47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 44}
+  - name: akappa_art_Frame_7
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 124
+      width: 27
+      height: 12
+    spriteID: 361adcd1efedb9f40bdd08f5bd829f21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 124}
+  - name: akappa_art_Frame_8
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.8333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 64
+      width: 29
+      height: 12
+    spriteID: 2b6d6b3c74e569c4aa3b7b1c9b8a8725
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 64}
+  - name: akappa_art_Frame_9
+    originalName: 
+    pivot: {x: 0.46428573, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 104
+      width: 28
+      height: 12
+    spriteID: 47001d9fb6bb5994c81cbc7d4135d2cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 104}
+  - name: akappa_art_Frame_11
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 84
+      width: 29
+      height: 12
+    spriteID: 566c1ad82e73fd14abb72b0c86da3b5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 84}
+  - name: akappa_art_Frame_12
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.42105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 61
+      width: 26
+      height: 19
+    spriteID: 0d8247a7e37eaca4ea84075389e0c755
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 61}
+  - name: akappa_art_Frame_13
+    originalName: 
+    pivot: {x: 0.56, y: -0.3181818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 31
+      width: 25
+      height: 22
+    spriteID: 2dbc781442034094f9c1f305f8195f35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 31}
+  - name: akappa_art_Frame_14
+    originalName: 
+    pivot: {x: 0.56, y: -0.42105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 113
+      width: 25
+      height: 19
+    spriteID: f508c5255a2a4914784b302c2188b8aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 113}
+  - name: akappa_art_Frame_15
+    originalName: 
+    pivot: {x: 0.56, y: -0.42105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 140
+      width: 25
+      height: 19
+    spriteID: 3cdd8fb0715501c45bad14c966352de1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 140}
+  - name: akappa_art_Frame_16
+    originalName: 
+    pivot: {x: 0.5185185, y: -0.5625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 190
+      width: 27
+      height: 16
+    spriteID: 8da6ce274f8081349afc70ae44826fa9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 190}
+  - name: akappa_art_Frame_17
+    originalName: 
+    pivot: {x: 0.51724136, y: -0.6}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 167
+      width: 29
+      height: 15
+    spriteID: 3a85604b03befc94fac022d906f048db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 167}
+  - name: akappa_art_Frame_18
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.11764706}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 88
+      width: 29
+      height: 17
+    spriteID: c74a1e7865923f249b21e2c9f2ed8b3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 88}
+  - name: akappa_art_Frame_19
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.10526316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 29
+      height: 19
+    spriteID: b4df1d03f457897439e336219d777f26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1553342722
+    name: akappa_art
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: akappa_art_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 2
+        y: 9
+        width: 29
+        height: 12
+      spriteId: 9788b70089d483c4c8ee0ae3d7feef89
+    - name: akappa_art_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 2
+        y: 9
+        width: 29
+        height: 12
+      spriteId: 5cd6c2fd1aeb1914987bb285c2fadbf4
+    - name: akappa_art_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 2
+        y: 9
+        width: 29
+        height: 12
+      spriteId: 3a5666b3f51e6c74f846a7d8643214a9
+    - name: akappa_art_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 2
+        y: 9
+        width: 29
+        height: 12
+      spriteId: bf7a9cc838823bf489af494d7a24d990
+    - name: akappa_art_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 2
+        y: 9
+        width: 29
+        height: 12
+      spriteId: 2b389c870d78ed74cbc025283a468f47
+    - name: akappa_art_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 1
+        y: 9
+        width: 27
+        height: 12
+      spriteId: 361adcd1efedb9f40bdd08f5bd829f21
+    - name: akappa_art_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 2
+        y: 10
+        width: 29
+        height: 12
+      spriteId: 2b6d6b3c74e569c4aa3b7b1c9b8a8725
+    - name: akappa_art_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 3
+        y: 9
+        width: 28
+        height: 12
+      spriteId: 47001d9fb6bb5994c81cbc7d4135d2cf
+    - name: akappa_art_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 2
+        y: 9
+        width: 29
+        height: 12
+      spriteId: 566c1ad82e73fd14abb72b0c86da3b5f
+    - name: akappa_art_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 2
+        y: 8
+        width: 26
+        height: 19
+      spriteId: 0d8247a7e37eaca4ea84075389e0c755
+    - name: akappa_art_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 2
+        y: 7
+        width: 25
+        height: 22
+      spriteId: 2dbc781442034094f9c1f305f8195f35
+    - name: akappa_art_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 2
+        y: 8
+        width: 25
+        height: 19
+      spriteId: f508c5255a2a4914784b302c2188b8aa
+    - name: akappa_art_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 2
+        y: 8
+        width: 25
+        height: 19
+      spriteId: 3cdd8fb0715501c45bad14c966352de1
+    - name: akappa_art_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 2
+        y: 9
+        width: 27
+        height: 16
+      spriteId: 8da6ce274f8081349afc70ae44826fa9
+    - name: akappa_art_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 1
+        y: 9
+        width: 29
+        height: 15
+      spriteId: 3a85604b03befc94fac022d906f048db
+    - name: akappa_art_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 2
+        y: 2
+        width: 29
+        height: 17
+      spriteId: c74a1e7865923f249b21e2c9f2ed8b3f
+    - name: akappa_art_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 2
+        y: 2
+        width: 29
+        height: 19
+      spriteId: b4df1d03f457897439e336219d777f26
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}

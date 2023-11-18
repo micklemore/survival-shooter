@@ -1,0 +1,1088 @@
+fileFormatVersion: 2
+guid: a51c406815a60a1409ee36468b934f11
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: pasodoble_art_Frame_0
+    originalName: 
+    pivot: {x: 0.4827586, y: -1.3333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 216
+      y: 87
+      width: 29
+      height: 9
+    spriteID: 6f6ce050b8ca13d49baf8cb8f46c69bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 216, y: 87}
+  - name: pasodoble_art_Frame_2
+    originalName: 
+    pivot: {x: 0.4827586, y: -1.0909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 87
+      width: 29
+      height: 11
+    spriteID: d6d70fe1e542f7943b185ff36f1ce34b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 87}
+  - name: pasodoble_art_Frame_3
+    originalName: 
+    pivot: {x: 0.4827586, y: -1.0909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 179
+      y: 87
+      width: 29
+      height: 11
+    spriteID: 8285dbe0df5ed1a4b80261b89936cb74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 179, y: 87}
+  - name: pasodoble_art_Frame_4
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 181
+      y: 59
+      width: 29
+      height: 13
+    spriteID: fbb98e6f3907bd447827f63f72310fcb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 181, y: 59}
+  - name: pasodoble_art_Frame_5
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 149
+      y: 33
+      width: 29
+      height: 16
+    spriteID: 70be7a279e61c324fab7a9c3db24fecf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 149, y: 33}
+  - name: pasodoble_art_Frame_6
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 33
+      width: 29
+      height: 18
+    spriteID: d3c070a58209da041a97ba5e67a5829d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 33}
+  - name: pasodoble_art_Frame_7
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.6315789}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 4
+      width: 29
+      height: 19
+    spriteID: 2283340a45c7a234fb0782629c827e72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 4}
+  - name: pasodoble_art_Frame_8
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.6315789}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 4
+      width: 29
+      height: 19
+    spriteID: 317876ca14f9e0146805244a2bc49707
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 187, y: 4}
+  - name: pasodoble_art_Frame_10
+    originalName: 
+    pivot: {x: 0.4827586, y: -1.3333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 108
+      width: 29
+      height: 9
+    spriteID: d86ab1911b1a9a444b4f2f3752002ae9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 108}
+  - name: pasodoble_art_Frame_11
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.5882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 33
+      width: 28
+      height: 17
+    spriteID: 2107acd5281a10e43b7ad52e33b855b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 33}
+  - name: pasodoble_art_Frame_12
+    originalName: 
+    pivot: {x: 0.65217394, y: -0.45000002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 59
+      width: 23
+      height: 20
+    spriteID: cf9a25d6bf24a0244a674814ee8bfb83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 59}
+  - name: pasodoble_art_Frame_13
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.6}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 4
+      width: 26
+      height: 20
+    spriteID: bfb2716a9caa2bb409a73bdb5f525d2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 224, y: 4}
+  - name: pasodoble_art_Frame_14
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.7222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 115
+      y: 33
+      width: 26
+      height: 18
+    spriteID: 02841df9a3e4d5740a3f677342cd07d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 115, y: 33}
+  - name: pasodoble_art_Frame_15
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.6111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 33
+      width: 30
+      height: 18
+    spriteID: f7605d7e8d6a3bc4f970bc76691db62b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 33}
+  - name: pasodoble_art_Frame_16
+    originalName: 
+    pivot: {x: 0.44827586, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 108
+      width: 29
+      height: 9
+    spriteID: 8777bafb608367943b489360b4df21c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 108}
+  - name: pasodoble_art_Frame_17
+    originalName: 
+    pivot: {x: 0.44827586, y: -1.1111112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 108
+      width: 29
+      height: 9
+    spriteID: f65be5782b3a70e4d95be84fe6a4691c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 108}
+  - name: pasodoble_art_Frame_18
+    originalName: 
+    pivot: {x: 0.4827586, y: -1.2222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 115
+      y: 108
+      width: 29
+      height: 9
+    spriteID: d82d4f59c3e65044b9b678e90c31fdd2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 115, y: 108}
+  - name: pasodoble_art_Frame_20
+    originalName: 
+    pivot: {x: 0.4827586, y: -1.3333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 108
+      width: 29
+      height: 9
+    spriteID: 217516d74d0b83545aebe94f2bf62fa5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 108}
+  - name: pasodoble_art_Frame_21
+    originalName: 
+    pivot: {x: 0.5555556, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 87
+      width: 27
+      height: 12
+    spriteID: bf95b3ec86c370e4f953507012dd0fcb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 87}
+  - name: pasodoble_art_Frame_22
+    originalName: 
+    pivot: {x: 0.5769231, y: -0.923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 59
+      width: 26
+      height: 13
+    spriteID: 4615b693289c2d1418300cb4993d8d2c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 59}
+  - name: pasodoble_art_Frame_23
+    originalName: 
+    pivot: {x: 0.46428573, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 59
+      width: 28
+      height: 16
+    spriteID: 48ddec5cc4faeb14a97de5175e1866b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 59}
+  - name: pasodoble_art_Frame_24
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.42857146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 59
+      width: 29
+      height: 14
+    spriteID: 08ddb36e69a7fe34fa204874661e5a61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 59}
+  - name: pasodoble_art_Frame_25
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.3}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 4
+      width: 29
+      height: 20
+    spriteID: f12539173328bb94d8767f9bf7c35eaa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 4}
+  - name: pasodoble_art_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: -0.0952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 28
+      height: 21
+    spriteID: ebbb70d283e51034dad31ae8fe3e37f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: pasodoble_art_Frame_27
+    originalName: 
+    pivot: {x: 0.51724136, y: -0.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 33
+      width: 29
+      height: 16
+    spriteID: eb633dc5192440944aa917869fb99cad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 33}
+  - name: pasodoble_art_Frame_28
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.3}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 4
+      width: 29
+      height: 20
+    spriteID: db1f5ddc6135d7c4abe49a636ef37e3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 4}
+  - name: pasodoble_art_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: -0.0952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 4
+      width: 28
+      height: 21
+    spriteID: 59a5af071310c2a45bd3904678becb24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 4}
+  - name: pasodoble_art_Frame_30
+    originalName: 
+    pivot: {x: 0.51724136, y: -0.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 223
+      y: 33
+      width: 29
+      height: 16
+    spriteID: a4beeb9ce9ba67e4b97ef7764110131a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 223, y: 33}
+  - name: pasodoble_art_Frame_31
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.42857146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 59
+      width: 29
+      height: 14
+    spriteID: 030952d3992c6774c9435af3c01b36c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 59}
+  - name: pasodoble_art_Frame_32
+    originalName: 
+    pivot: {x: 0.46428573, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 59
+      width: 28
+      height: 16
+    spriteID: 805777816f9e7cd49b359d7de6cbbbdb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 59}
+  - name: pasodoble_art_Frame_33
+    originalName: 
+    pivot: {x: 0.5769231, y: -0.923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 87
+      width: 26
+      height: 13
+    spriteID: 2f9bda1738608d145afba9a5409c97c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 87}
+  - name: pasodoble_art_Frame_34
+    originalName: 
+    pivot: {x: 0.5769231, y: -0.923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 87
+      width: 26
+      height: 13
+    spriteID: 85367f0131e629c409745707ba3c95ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 87}
+  - name: pasodoble_art_Frame_35
+    originalName: 
+    pivot: {x: 0.5555556, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 87
+      width: 27
+      height: 12
+    spriteID: 6b8e990b750b9304696df0e4de139f94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 87}
+  - name: pasodoble_art_Frame_36
+    originalName: 
+    pivot: {x: 0.4827586, y: -1.3333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 108
+      width: 29
+      height: 9
+    spriteID: 51c1919d348f2854ead3ef5a49a896a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 108}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1839877429
+    name: pasodoble_art
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: pasodoble_art_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 2
+        y: 12
+        width: 29
+        height: 9
+      spriteId: 6f6ce050b8ca13d49baf8cb8f46c69bd
+    - name: pasodoble_art_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 2
+        y: 12
+        width: 29
+        height: 11
+      spriteId: d6d70fe1e542f7943b185ff36f1ce34b
+    - name: pasodoble_art_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 2
+        y: 12
+        width: 29
+        height: 11
+      spriteId: 8285dbe0df5ed1a4b80261b89936cb74
+    - name: pasodoble_art_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 2
+        y: 12
+        width: 29
+        height: 13
+      spriteId: fbb98e6f3907bd447827f63f72310fcb
+    - name: pasodoble_art_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 2
+        y: 12
+        width: 29
+        height: 16
+      spriteId: 70be7a279e61c324fab7a9c3db24fecf
+    - name: pasodoble_art_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 2
+        y: 12
+        width: 29
+        height: 18
+      spriteId: d3c070a58209da041a97ba5e67a5829d
+    - name: pasodoble_art_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 2
+        y: 12
+        width: 29
+        height: 19
+      spriteId: 2283340a45c7a234fb0782629c827e72
+    - name: pasodoble_art_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 2
+        y: 12
+        width: 29
+        height: 19
+      spriteId: 317876ca14f9e0146805244a2bc49707
+    - name: pasodoble_art_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 2
+        y: 12
+        width: 29
+        height: 9
+      spriteId: d86ab1911b1a9a444b4f2f3752002ae9
+    - name: pasodoble_art_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: 10
+        width: 28
+        height: 17
+      spriteId: 2107acd5281a10e43b7ad52e33b855b0
+    - name: pasodoble_art_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 1
+        y: 9
+        width: 23
+        height: 20
+      spriteId: cf9a25d6bf24a0244a674814ee8bfb83
+    - name: pasodoble_art_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 2
+        y: 12
+        width: 26
+        height: 20
+      spriteId: bfb2716a9caa2bb409a73bdb5f525d2d
+    - name: pasodoble_art_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 2
+        y: 13
+        width: 26
+        height: 18
+      spriteId: 02841df9a3e4d5740a3f677342cd07d9
+    - name: pasodoble_art_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 2
+        y: 11
+        width: 30
+        height: 18
+      spriteId: f7605d7e8d6a3bc4f970bc76691db62b
+    - name: pasodoble_art_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 3
+        y: 9
+        width: 29
+        height: 9
+      spriteId: 8777bafb608367943b489360b4df21c9
+    - name: pasodoble_art_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 3
+        y: 10
+        width: 29
+        height: 9
+      spriteId: f65be5782b3a70e4d95be84fe6a4691c
+    - name: pasodoble_art_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 2
+        y: 11
+        width: 29
+        height: 9
+      spriteId: d82d4f59c3e65044b9b678e90c31fdd2
+    - name: pasodoble_art_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 2
+        y: 12
+        width: 29
+        height: 9
+      spriteId: 217516d74d0b83545aebe94f2bf62fa5
+    - name: pasodoble_art_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 1
+        y: 12
+        width: 27
+        height: 12
+      spriteId: bf95b3ec86c370e4f953507012dd0fcb
+    - name: pasodoble_art_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 1
+        y: 12
+        width: 26
+        height: 13
+      spriteId: 4615b693289c2d1418300cb4993d8d2c
+    - name: pasodoble_art_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 3
+        y: 4
+        width: 28
+        height: 16
+      spriteId: 48ddec5cc4faeb14a97de5175e1866b8
+    - name: pasodoble_art_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 2
+        y: 6
+        width: 29
+        height: 14
+      spriteId: 08ddb36e69a7fe34fa204874661e5a61
+    - name: pasodoble_art_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 2
+        y: 6
+        width: 29
+        height: 20
+      spriteId: f12539173328bb94d8767f9bf7c35eaa
+    - name: pasodoble_art_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 2
+        y: 2
+        width: 28
+        height: 21
+      spriteId: ebbb70d283e51034dad31ae8fe3e37f9
+    - name: pasodoble_art_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 1
+        y: 3
+        width: 29
+        height: 16
+      spriteId: eb633dc5192440944aa917869fb99cad
+    - name: pasodoble_art_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 2
+        y: 6
+        width: 29
+        height: 20
+      spriteId: db1f5ddc6135d7c4abe49a636ef37e3a
+    - name: pasodoble_art_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 2
+        y: 2
+        width: 28
+        height: 21
+      spriteId: 59a5af071310c2a45bd3904678becb24
+    - name: pasodoble_art_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 1
+        y: 3
+        width: 29
+        height: 16
+      spriteId: a4beeb9ce9ba67e4b97ef7764110131a
+    - name: pasodoble_art_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 2
+        y: 6
+        width: 29
+        height: 14
+      spriteId: 030952d3992c6774c9435af3c01b36c5
+    - name: pasodoble_art_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 3
+        y: 4
+        width: 28
+        height: 16
+      spriteId: 805777816f9e7cd49b359d7de6cbbbdb
+    - name: pasodoble_art_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 1
+        y: 12
+        width: 26
+        height: 13
+      spriteId: 2f9bda1738608d145afba9a5409c97c7
+    - name: pasodoble_art_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 1
+        y: 12
+        width: 26
+        height: 13
+      spriteId: 85367f0131e629c409745707ba3c95ac
+    - name: pasodoble_art_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 1
+        y: 12
+        width: 27
+        height: 12
+      spriteId: 6b8e990b750b9304696df0e4de139f94
+    - name: pasodoble_art_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 2
+        y: 12
+        width: 29
+        height: 9
+      spriteId: 51c1919d348f2854ead3ef5a49a896a3
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}

@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: bf70d350a9785d3428caffa2e6784f3b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: magnum_art_Frame_0
+    originalName: 
+    pivot: {x: 0.4, y: -1.7142859}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 71
+      width: 10
+      height: 7
+    spriteID: 853d305c85ccdb44d941e728211120ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 71}
+  - name: magnum_art_Frame_2
+    originalName: 
+    pivot: {x: 0.4, y: -1.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 4
+      width: 10
+      height: 8
+    spriteID: fbc69ba87ee543745a7eccf47be03db5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 4}
+  - name: magnum_art_Frame_3
+    originalName: 
+    pivot: {x: 0.4, y: -1.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 20
+      width: 10
+      height: 8
+    spriteID: 53eee0b69b47f1542876bf869df5ebd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 20}
+  - name: magnum_art_Frame_4
+    originalName: 
+    pivot: {x: 0.4, y: -1.3333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 46
+      width: 10
+      height: 9
+    spriteID: 3069b1e224e147345bd48648e57fb336
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 46}
+  - name: magnum_art_Frame_5
+    originalName: 
+    pivot: {x: 0.4, y: -1.7142859}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 86
+      width: 10
+      height: 7
+    spriteID: 7a74c9a296b63774e9f469a394b00cb9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 86}
+  - name: magnum_art_Frame_7
+    originalName: 
+    pivot: {x: 0.4, y: -1.7142859}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 101
+      width: 10
+      height: 7
+    spriteID: e9359e81c31dfdb429399daca771aa8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 101}
+  - name: magnum_art_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -1.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 36
+      width: 10
+      height: 8
+    spriteID: e1a2b4d57c072444eaa5f878902e0547
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 36}
+  - name: magnum_art_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -1.8571429}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 116
+      width: 10
+      height: 7
+    spriteID: 2dc472b26538f754f8de24ec833409e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 116}
+  - name: magnum_art_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -1.7142859}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 19
+      width: 10
+      height: 7
+    spriteID: 95e2cdb766326f946b43f8dc082b6554
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 19}
+  - name: magnum_art_Frame_12
+    originalName: 
+    pivot: {x: 0.4, y: -1.7142859}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 34
+      width: 10
+      height: 7
+    spriteID: 9d361cf6c25056d4b980c0202554cdd2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 34}
+  - name: magnum_art_Frame_13
+    originalName: 
+    pivot: {x: 0.75, y: -1.0909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 81
+      width: 8
+      height: 11
+    spriteID: 8f58c60bc6c8d2d429c446a2ab3e8c3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 81}
+  - name: magnum_art_Frame_14
+    originalName: 
+    pivot: {x: 0.71428573, y: -1.0909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 52
+      width: 7
+      height: 11
+    spriteID: f4ccfee8c54a5ff47b6ffc14c9c2d6d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 52}
+  - name: magnum_art_Frame_15
+    originalName: 
+    pivot: {x: 0.45454547, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 26
+      width: 11
+      height: 12
+    spriteID: fb2a1a536ca7c2f4299e11e0e0d97c84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 26}
+  - name: magnum_art_Frame_16
+    originalName: 
+    pivot: {x: 0.33333334, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 99
+      width: 12
+      height: 14
+    spriteID: 6e368d7a10515c94f8770afccd0ffec8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 99}
+  - name: magnum_art_Frame_17
+    originalName: 
+    pivot: {x: 0.36363637, y: -0.7857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 4
+      width: 11
+      height: 14
+    spriteID: ad771f0db9f8dd341b1d5ae8add56e3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 4}
+  - name: magnum_art_Frame_18
+    originalName: 
+    pivot: {x: 0.26666668, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 56
+      width: 15
+      height: 14
+    spriteID: 429a5faa099af104188bfab4dbff96ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 56}
+  - name: magnum_art_Frame_19
+    originalName: 
+    pivot: {x: 0.23529412, y: -0.6875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 32
+      width: 17
+      height: 16
+    spriteID: 7e8b9106c46e75647b36ac679af6afbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 32}
+  - name: magnum_art_Frame_20
+    originalName: 
+    pivot: {x: 0.22222222, y: -0.45000002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 18
+      height: 20
+    spriteID: edf811dcd903a8a4fb25c338b223e508
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: magnum_art_Frame_21
+    originalName: 
+    pivot: {x: 0.3846154, y: -0.7692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 78
+      width: 13
+      height: 13
+    spriteID: 75a4c288dbd6cb140a5deca0c5e08a48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 78}
+  - name: magnum_art_Frame_22
+    originalName: 
+    pivot: {x: 0.75, y: -1.0909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 100
+      width: 8
+      height: 11
+    spriteID: 0a507adad11002b439194ea6360f095c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 100}
+  - name: magnum_art_Frame_23
+    originalName: 
+    pivot: {x: 0.5555556, y: -1.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 63
+      width: 9
+      height: 10
+    spriteID: c6865c41ab3f9f44787ee9dcb8c33acd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 63}
+  - name: magnum_art_Frame_24
+    originalName: 
+    pivot: {x: 0.4, y: -1.7142859}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 49
+      width: 10
+      height: 7
+    spriteID: 15c81a4229ddd53419966f71966ca53c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 49}
+  - name: magnum_art_Frame_25
+    originalName: 
+    pivot: {x: 0.36363637, y: -1.7142859}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 4
+      width: 11
+      height: 7
+    spriteID: f9a60f3647d06d9409cf6a91bcb92498
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 480444157
+    name: magnum_art
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: magnum_art_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 12
+        y: 12
+        width: 10
+        height: 7
+      spriteId: 853d305c85ccdb44d941e728211120ca
+    - name: magnum_art_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 12
+        y: 12
+        width: 10
+        height: 8
+      spriteId: fbc69ba87ee543745a7eccf47be03db5
+    - name: magnum_art_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 12
+        y: 12
+        width: 10
+        height: 8
+      spriteId: 53eee0b69b47f1542876bf869df5ebd5
+    - name: magnum_art_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 12
+        y: 12
+        width: 10
+        height: 9
+      spriteId: 3069b1e224e147345bd48648e57fb336
+    - name: magnum_art_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 12
+        y: 12
+        width: 10
+        height: 7
+      spriteId: 7a74c9a296b63774e9f469a394b00cb9
+    - name: magnum_art_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 12
+        y: 12
+        width: 10
+        height: 7
+      spriteId: e9359e81c31dfdb429399daca771aa8a
+    - name: magnum_art_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 11
+        y: 13
+        width: 10
+        height: 8
+      spriteId: e1a2b4d57c072444eaa5f878902e0547
+    - name: magnum_art_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 11
+        y: 13
+        width: 10
+        height: 7
+      spriteId: 2dc472b26538f754f8de24ec833409e0
+    - name: magnum_art_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 11
+        y: 12
+        width: 10
+        height: 7
+      spriteId: 95e2cdb766326f946b43f8dc082b6554
+    - name: magnum_art_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 12
+        y: 12
+        width: 10
+        height: 7
+      spriteId: 9d361cf6c25056d4b980c0202554cdd2
+    - name: magnum_art_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 10
+        y: 12
+        width: 8
+        height: 11
+      spriteId: 8f58c60bc6c8d2d429c446a2ab3e8c3a
+    - name: magnum_art_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 11
+        y: 12
+        width: 7
+        height: 11
+      spriteId: f4ccfee8c54a5ff47b6ffc14c9c2d6d9
+    - name: magnum_art_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 11
+        y: 9
+        width: 11
+        height: 12
+      spriteId: fb2a1a536ca7c2f4299e11e0e0d97c84
+    - name: magnum_art_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 12
+        y: 10
+        width: 12
+        height: 14
+      spriteId: 6e368d7a10515c94f8770afccd0ffec8
+    - name: magnum_art_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 12
+        y: 11
+        width: 11
+        height: 14
+      spriteId: ad771f0db9f8dd341b1d5ae8add56e3b
+    - name: magnum_art_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 12
+        y: 10
+        width: 15
+        height: 14
+      spriteId: 429a5faa099af104188bfab4dbff96ef
+    - name: magnum_art_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 12
+        y: 11
+        width: 17
+        height: 16
+      spriteId: 7e8b9106c46e75647b36ac679af6afbf
+    - name: magnum_art_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 12
+        y: 9
+        width: 18
+        height: 20
+      spriteId: edf811dcd903a8a4fb25c338b223e508
+    - name: magnum_art_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 11
+        y: 10
+        width: 13
+        height: 13
+      spriteId: 75a4c288dbd6cb140a5deca0c5e08a48
+    - name: magnum_art_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 10
+        y: 12
+        width: 8
+        height: 11
+      spriteId: 0a507adad11002b439194ea6360f095c
+    - name: magnum_art_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 11
+        y: 11
+        width: 9
+        height: 10
+      spriteId: c6865c41ab3f9f44787ee9dcb8c33acd
+    - name: magnum_art_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 12
+        y: 12
+        width: 10
+        height: 7
+      spriteId: 15c81a4229ddd53419966f71966ca53c
+    - name: magnum_art_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 12
+        y: 12
+        width: 11
+        height: 7
+      spriteId: f9a60f3647d06d9409cf6a91bcb92498
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}

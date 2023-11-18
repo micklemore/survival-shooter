@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28503206625204a479af5fe69c912259, type: 3}
+  m_Name: Shotgun
+  m_EditorClassIdentifier: 
+  weapon: {fileID: -368176464810542762, guid: 4c1d4ecf6ae98364c858324ee18647c4, type: 3}
+  id: 2
+  damage: 10
+  projectileSpeed: 50
+  rangeDistance: 20
+  shootSpeed: 0.15
+  numberOfProjectileToShoot: 3
+  spread: 5
+  chargerCapacity: 1000000
+  pushbackForce: 25
+  timerUntilNextPushback: 0.5
