@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class StateMachine : MonoBehaviour
 {
-	public IBaseState CurrentState => currentState;
-    IBaseState currentState;
-
+	public BaseState CurrentState => currentState;
+    BaseState currentState;
+	
 	void Start()
 	{
+		InitializeStateMachine();
 		currentState = GetInitialState();
+		Debug.Log("current state is " + currentState.ToString());
 		if (currentState != null )
 		{
 			currentState.OnEnter();
@@ -32,7 +34,7 @@ public class StateMachine : MonoBehaviour
 		}
 	}
 
-	public void ChangeState(IBaseState newState)
+	public void ChangeState(BaseState newState)
 	{
 		if (currentState == null)
 		{
@@ -50,8 +52,12 @@ public class StateMachine : MonoBehaviour
 		}
 	}
 
-	public virtual IBaseState GetInitialState()
+	public virtual BaseState GetInitialState()
 	{
 		return null;
 	}
+
+	public virtual void InitializeStateMachine() { }
+
+	public virtual void NotifyOnEnterState(string stateName) {}
 }

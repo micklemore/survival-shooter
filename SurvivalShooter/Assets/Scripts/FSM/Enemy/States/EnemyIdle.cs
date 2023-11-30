@@ -1,34 +1,13 @@
 using UnityEngine;
 
-public class EnemyIdle : IBaseState
+public class EnemyIdle : BaseState
 {
-	EnemyFSM enemyFSM;
+	static string NAME = "idle";
 
-	public EnemyIdle(EnemyFSM enemyFSM)
-	{
-		this.enemyFSM = enemyFSM;
-	}
+	public EnemyIdle(StateMachine stateMachine) : base(stateMachine) {}
 
-	public void OnEnter()
+	protected override string GetName()
 	{
-		Debug.Log("OnEnter di Idle di Enemy");
-	}
-
-	public void OnExit()
-	{
-		Debug.Log("OnExit di Idle di Enemy");
-	}
-
-	public void UpdateLogic()
-	{
-	}
-
-	public void UpdatePhysics()
-	{
-	}
-
-	public override string ToString()
-	{
-		return "Idle";
+		return NAME;
 	}
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Weapon : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class Weapon : MonoBehaviour
 
 	[SerializeField]
 	IDamager damager;
+
+	[SerializeField]
+	GameObject burstEffect;
 
 	public int Id => id;
 	int id;
@@ -110,13 +114,22 @@ public class Weapon : MonoBehaviour
 	{
 		for (int i = 0; i < numberOfProjectileToShoot; i++)
 		{
+			StartCoroutine(SpawnBurstEffect());
 			Projectile projectileToSpawn = Instantiate(projectile, projectileSpawnSocketTransform.position, transform.rotation);
-			Vector3 spreadVector = new Vector3(UnityEngine.Random.Range(-spread, spread), UnityEngine.Random.Range(-spread, spread), 0);
-			projectileToSpawn.FireProjectile(this, GetDirectionOfFire() + spreadVector, damage, projectileSpeed, rangeDistance, faction, pushbackForce, timerUntilNextPushback);
+			projectileToSpawn.FireProjectile(this, GetDirectionOfFire(), damage, projectileSpeed, rangeDistance, faction, pushbackForce, timerUntilNextPushback);
 		}
 		numberOfProjectilesInCharger--;
 		//fireNotify()
 		Debug.Log("projectiles left: " + numberOfProjectilesInCharger);
+	}
+
+	IEnumerator SpawnBurstEffect()
+	{
+		if (burstEffect)
+		{
+			GameObject burst = Instantiate(burstEffect, projectileSpawnSocketTransform);
+			yield return null;
+		}
 	}
 
 	bool CanShoot()
@@ -126,7 +139,9 @@ public class Weapon : MonoBehaviour
 
 	protected Vector3 GetDirectionOfFire()
 	{
-		return Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+		Vector3 directionOfFire = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position);
+		Vector3 spreadDirection = new Vector3(directionOfFire.x *10 + Random.Range(-spread, spread), directionOfFire.y *10 + Random.Range(-spread, spread), 0);
+		return spreadDirection.normalized;
 	}
 
 	void WaitUntilNextFire()
@@ -139,11 +154,6 @@ public class Weapon : MonoBehaviour
 
 	public int Reload(int amount)
 	{
-		if (IsChargerFull())
-		{
-			Debug.Log("charger is full");
-		}
-
 		int reloadedProjectiles = 0;
 
 		if (chargerCapacity > numberOfProjectilesInCharger + amount)

@@ -15,11 +15,11 @@ MonoBehaviour:
   weapon: {fileID: -368176464810542762, guid: 4c1d4ecf6ae98364c858324ee18647c4, type: 3}
   id: 2
   damage: 10
-  projectileSpeed: 50
+  projectileSpeed: 15
   rangeDistance: 20
   shootSpeed: 0.15
   numberOfProjectileToShoot: 3
-  spread: 5
+  spread: 0.1
   chargerCapacity: 1000000
-  pushbackForce: 25
+  pushbackForce: 1
   timerUntilNextPushback: 0.5

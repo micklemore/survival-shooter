@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3004761785904440005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9, y: 3.84, z: 0}
+  m_LocalPosition: {x: 0.308, y: 0.418, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 7263856259281545231}
   - component: {fileID: 9121476283855591369}
   m_Layer: 0
-  m_Name: Body
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,8 +56,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5259911516558647278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.04, y: -2.39, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalPosition: {x: -0.216, y: -0.257, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2596695905253465555}
@@ -103,13 +103,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8966263863505769567, guid: a1925e7d73214f63a8ddcce6bea40954, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 8966263863505769567, guid: c2f83974554278f458fafd12fb47a2f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.24, y: 2.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -164,8 +164,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpawnSocketTransform: {fileID: 0}
   projectile: {fileID: 0}
+  burstEffect: {fileID: 0}
   circleColliderTransform: {fileID: 8230046576312880337}
-  circleColliderRadius: 5
+  circleColliderRadius: 0.4
 --- !u!114 &3540924829819305107
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, IDamageable
+public class Enemy : MonoBehaviour, IDamageable, IDamager
 {
 	[SerializeField]
 	FactionEnum faction = FactionEnum.ENEMY_FACTION;
@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour, IDamageable
 	[SerializeField]
 	float health = 110f;
 
+	[SerializeField]
+	Animator animator;
+
 	EnemyFSM enemyFSM;
 
 	bool isDead = false;
@@ -21,6 +24,8 @@ public class Enemy : MonoBehaviour, IDamageable
 	bool canBePushedBack = true;
 
 	Rigidbody2D rb;
+
+	string currentStateName;
 
 	void Start()
 	{
@@ -38,7 +43,8 @@ public class Enemy : MonoBehaviour, IDamageable
 		if (canBePushedBack)
 		{
 			canBePushedBack = false;
-			ApplyPushBackForce(damageObject.PushDirection, damageObject.PushForce, damageObject.TimerUntilNextShoot);
+			enemyFSM.ChangeState(enemyFSM.hit);
+			ApplyPushBackForceToSelf(damageObject.PushDirection, damageObject.PushForce, damageObject.TimerUntilNextShoot);
 		}
 
 		health -= damageObject.DamageAmount;
@@ -56,15 +62,14 @@ public class Enemy : MonoBehaviour, IDamageable
 	IEnumerator WaitForNextPushback(float timerUntilNextPushback)
 	{
 		yield return new WaitForSeconds(timerUntilNextPushback);
+		enemyFSM.ChangeState(enemyFSM.idleState);
 		canBePushedBack = true;
 	}
 
-	void ApplyPushBackForce(Vector3 pushDirection, float pushForce, float timerUntilNextPushback)
+	void ApplyPushBackForceToSelf(Vector3 pushDirection, float pushForce, float timerUntilNextPushback)
 	{
-		enemyFSM.ChangeState(enemyFSM.pushedBack);
 		Debug.Log("pushdirection is " + pushDirection + " e force is " + pushForce);
 		rb.AddForce(pushDirection.normalized * pushForce, ForceMode2D.Impulse);
-		enemyFSM.ChangeState(enemyFSM.idleState);
 		StartCoroutine(WaitForNextPushback(timerUntilNextPushback));
 	}
 
@@ -79,11 +84,46 @@ public class Enemy : MonoBehaviour, IDamageable
 
 	public void Move(Vector2 direction)
 	{
-		if (!(enemyFSM.GetCurrentState() == EnemyStates.PUSHED_BACK))
+		if (!(enemyFSM.GetCurrentState() == EnemyStates.HIT))
 		{
 			transform.position += (Vector3)direction * speed * Time.fixedDeltaTime;
 			enemyFSM.ChangeState(enemyFSM.movingState);
 		}
+	}
+
+	public void Attack(Transform playerTransform)
+	{
+		Vector2 circleColliderPosition = GetCircleColliderPosition(playerTransform);
+		Collider2D[] collisions = Physics2D.OverlapCircleAll(circleColliderPosition, 0.5f);
+
+		foreach (Collider2D collision in collisions)
+		{
+			IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
+			if (damageable != null && faction != damageable.GetFaction())
+			{
+				Debug.Log("ho colpito un " + collision.gameObject.name);
+				ContactPoint2D[] contactPoints = new ContactPoint2D[1];
+				collision.GetContacts(contactPoints);
+
+				Vector3 pushDirection = (Vector3)contactPoints[0].point - (Vector3)circleColliderPosition;
+				ApplyDamageToDamageables(damageable, pushDirection);
+			}
+		}
+	}
+
+	public void ApplyDamageToDamageables(IDamageable damageable, Vector3 pushDirection)
+	{
+		//DamageObject damageObject = new DamageObject(damage, pushDirection, base.pushbackForce, base.timerUntilNextPushback);
+		//HitResult hitResult = damageable.TakeDamage(damageObject);
+
+		//Debug.Log("ho fatto " + hitResult.Damage + "danni");
+	}
+
+	Vector2 GetCircleColliderPosition(Transform playerTransform)
+	{
+		Vector2 directionToPlayer = (Vector2)(playerTransform.position - transform.position).normalized;
+		Vector2 circleColliderPosition = (Vector2)transform.position + directionToPlayer * 3;
+		return circleColliderPosition;
 	}
 
 	public void SetAITargetTransform(Transform targetTransform)
@@ -93,5 +133,16 @@ public class Enemy : MonoBehaviour, IDamageable
 		{
 			enemyAI.SetTargetTransform(targetTransform);
 		}
+	}
+
+	public void RefreshAnimationForNewState(string stateName)
+	{
+		currentStateName = stateName;
+		PlayAnimation(stateName);
+	}
+
+	public void PlayAnimation(string animationName)
+	{
+		animator.Play(animationName);
 	}
 }

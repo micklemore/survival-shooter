@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
     Transform targetTransform;
 
     [SerializeField]
-    float nextWaypointDistance = 3;
+    float nextWaypointDistance = 3f;
 
     [SerializeField]
     float timerForNextPathCalculation = 0.1f;
@@ -57,6 +57,10 @@ public class EnemyAI : MonoBehaviour
 
     void FixedUpdate()
     {
+        if ((targetTransform.position - transform.position).sqrMagnitude <= 5)
+        {
+            enemy.Attack(targetTransform);
+        }
         currentTimer += Time.fixedDeltaTime;
         if (currentTimer >= timerForNextPathCalculation)
         {

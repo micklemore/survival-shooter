@@ -2,30 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMoving : IBaseState
+public class EnemyMoving : BaseState
 {
-	EnemyFSM enemyFSM;
+	static string NAME = "chasing";
 
-	public EnemyMoving(EnemyFSM enemyFSM)
-	{
-		this.enemyFSM = enemyFSM;
-	}
+	public EnemyMoving(StateMachine stateMachine) : base(stateMachine) {}
 
-	public void OnEnter()
+	protected override string GetName()
 	{
-		Debug.Log("OnEnter di Moving di Enemy");
-	}
-
-	public void OnExit()
-	{
-		Debug.Log("OnExit di Moving di Enemy");
-	}
-
-	public void UpdateLogic()
-	{
-	}
-
-	public void UpdatePhysics()
-	{
+		return NAME;
 	}
 }

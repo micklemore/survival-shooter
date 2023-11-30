@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -17,34 +18,46 @@ public class Player : MonoBehaviour, IDamageable
 	[SerializeField]
 	FactionEnum faction = FactionEnum.PLAYER_FACTION;
 
+	[SerializeField]
+	Animator animator;
+
+	bool hasARechargableWeapon => actualEquippedWeapon != null && actualEquippedWeapon.Id != 0;
+
 	Weapon actualEquippedWeapon;
 
-	MovementFSM movementFSM;
-	AttackFSM attackFSM;
+	PlayerFSM playerFSM;
 
 	List<IPickable> overlappedPickableObjects = new List<IPickable>();
 
 	Dictionary<int, int> ammunitions = new Dictionary<int, int>();
 
+	string lastAnimationLookDirection = "_front";
+
+	string currentStateName;
+
 	public FactionEnum GetFaction() => faction;
+
+	void Update()
+	{
+		UpdateLookDirection();
+	}
 
 	void Start()
 	{
-		movementFSM = GetComponent<MovementFSM>();
-		attackFSM = GetComponent<AttackFSM>();
+		playerFSM = GetComponent<PlayerFSM>();
 		EquipWeapon(0); //0 is id of melee weapon
 	}
 
 	public void Move(Vector2 direction)
     {
 		transform.position += (Vector3)direction * Time.fixedDeltaTime * playerSpeed;
-		if (direction.x == 0 && direction.y == 0 && movementFSM.GetCurrentState() == PlayerStates.MOVING)
+		if (direction.x == 0 && direction.y == 0 && playerFSM.GetCurrentState() == PlayerStates.MOVING)
 		{
-			movementFSM.ChangeState(movementFSM.idleState);
+			playerFSM.ChangeState(playerFSM.idleState);
 		}
-		else if ((direction.x != 0 || direction.y != 0) && movementFSM.GetCurrentState() == PlayerStates.IDLE)
+		else if ((direction.x != 0 || direction.y != 0) && playerFSM.GetCurrentState() == PlayerStates.IDLE)
 		{
-			movementFSM.ChangeState(movementFSM.movingState);
+			playerFSM.ChangeState(playerFSM.movingState);
 		}
 	}
 
@@ -196,7 +209,7 @@ public class Player : MonoBehaviour, IDamageable
 
 	bool CanReload()
 	{
-		return actualEquippedWeapon != null && actualEquippedWeapon.Id != 0 && !actualEquippedWeapon.IsChargerFull()
+		return hasARechargableWeapon && !actualEquippedWeapon.IsChargerFull()
 			&& ammunitions.ContainsKey(actualEquippedWeapon.Id) && ammunitions[actualEquippedWeapon.Id] > 0;
 	}
 
@@ -204,9 +217,49 @@ public class Player : MonoBehaviour, IDamageable
 	{
 		if (actualEquippedWeapon != null)
 		{
-			attackFSM.ChangeState(attackFSM.attackingState);
 			actualEquippedWeapon.Shoot(faction);
-			attackFSM.ChangeState(attackFSM.notAttackingState); //questo non va definito prima sul player, ma soprattutto è lo stato a sapere quando l'anim ha finito di playare
 		}
+	}
+
+	void UpdateLookDirection() 
+	{
+		string actualAnimationLook;
+		Vector3 lookDirectionAtMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+		
+		if (lookDirectionAtMousePosition.y < 0)
+		{
+			actualAnimationLook = "_front";
+		}
+		else
+		{
+			actualAnimationLook = "_back";
+		}
+
+		if (lookDirectionAtMousePosition.x < 0)
+		{
+			actualAnimationLook += "_left";
+		}
+		else
+		{
+			actualAnimationLook += "_right";
+		}
+
+		if (!string.Equals(actualAnimationLook, lastAnimationLookDirection))
+		{
+			PlayAnimation(currentStateName + actualAnimationLook);
+			lastAnimationLookDirection = actualAnimationLook;
+		}
+	}
+
+	public void RefreshAnimationForNewState(string stateName)
+	{
+		currentStateName = stateName;
+		string animationName = stateName + lastAnimationLookDirection;
+		PlayAnimation(animationName);
+	}
+
+	public void PlayAnimation(string animationName)
+	{
+		animator.Play(animationName);
 	}
 }

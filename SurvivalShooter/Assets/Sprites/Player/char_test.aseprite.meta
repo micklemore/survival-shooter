@@ -2,7 +2,132 @@ fileFormatVersion: 2
 guid: c71c5ed28a395f141b41b8a3eeda8794
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle_back_left
+    second: {fileID: 7400000, guid: 82317ad484732774cbc25d260c716173, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle_back_right
+    second: {fileID: 7400000, guid: 9d3e24c8508161441804dba1e221d596, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle_front
+    second: {fileID: 7400000, guid: eb81829ab4241f948a9db26f26d91b4b, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle_front_left
+    second: {fileID: 7400000, guid: 2f92da8e55bfe5a40bf70b34ecc91094, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle_front_right
+    second: {fileID: 7400000, guid: 8d94231e6a2772640b1963af2c6bcfce, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: backdash_back_left
+    second: {fileID: 7400000, guid: c319a8f432576b8479ad33ca90c05c9d, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: backdash_back_right
+    second: {fileID: 7400000, guid: 01aaacd65e040124aaf902f7fe048825, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: backdash_front_left
+    second: {fileID: 7400000, guid: b66d1896e2f0f87458c4120f0849e19f, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: backdash_front_right
+    second: {fileID: 7400000, guid: ef07c559675252a43922bf0170c95e79, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: backwalk_back_left
+    second: {fileID: 7400000, guid: b88eb67a064c92640b9607dd71255c77, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: backwalk_back_right
+    second: {fileID: 7400000, guid: 307551b0980e0db4eaf718bc825e38eb, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: backwalk_front_left
+    second: {fileID: 7400000, guid: 0b5e598262b26f74cb70c587e3c8fe65, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: backwalk_front_right
+    second: {fileID: 7400000, guid: 2496b7deb609310439822710129b074a, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: dash_back_left
+    second: {fileID: 7400000, guid: f76711a1b20175044820d8138bdb3911, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: dash_back_right
+    second: {fileID: 7400000, guid: 7941035728bdb584895ddcf1bd84c134, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: dash_front_left
+    second: {fileID: 7400000, guid: d4c63c7790b2f5043b8082b5171df44e, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: dash_front_right
+    second: {fileID: 7400000, guid: afe4e72030a63a9409cea2cf99e0b7cb, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: run_back_left
+    second: {fileID: 7400000, guid: e96f2b2266dd9184585acebaf47e2a63, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: run_back_right
+    second: {fileID: 7400000, guid: 927cb6f0d3314ba4f9dd7fe0cec54ed9, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: run_front_left
+    second: {fileID: 7400000, guid: 1380a807d9d6ade488a5517dac5beb65, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: run_front_right
+    second: {fileID: 7400000, guid: 8ef9e2c740607c245aa3a571aac9fca3, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: walk_back_left
+    second: {fileID: 7400000, guid: fa10b50dee8594c40baac5a7bc44d015, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: walk_back_right
+    second: {fileID: 7400000, guid: f6df12fd804f1834d8474f8d95522070, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: walk_front_left
+    second: {fileID: 7400000, guid: aff24a69b4416554982f6137dbe650d3, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: walk_front_right
+    second: {fileID: 7400000, guid: abb476e786f201d40af5cf8d47be5089, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -35,7 +160,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 32
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +220,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638359195279492536
+  platformSettingsDirtyTick: 638365233791778912
   textureAssetName: 
   singleSpriteImportData:
   - name: 

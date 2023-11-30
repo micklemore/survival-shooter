@@ -1,0 +1,1152 @@
+fileFormatVersion: 2
+guid: e5677bb298e7cfd469700a6809206351
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Failure
+    second: {fileID: 7400000, guid: 02e7276452479b747a4d48775bb86bfd, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Hit
+    second: {fileID: 7400000, guid: f32c8e168736ac845a01a4f99c7b7721, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: 0a647feb88dbbb94aa5e4b842a337aca, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Shooting
+    second: {fileID: 7400000, guid: 5d4ea54453246f849b84439966f01c9f, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 32
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638367682376588158
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: drone_dummy_Frame_0
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 170
+      width: 15
+      height: 19
+    spriteID: 763d173f709647447950da1183ad1676
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 170}
+  - name: drone_dummy_Frame_1
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 197
+      width: 15
+      height: 19
+    spriteID: 12339ebec677d9a418de51c85d8ac969
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 197}
+  - name: drone_dummy_Frame_2
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 224
+      width: 15
+      height: 19
+    spriteID: 96d2e7a7aed6dff458b45986199fbe3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 224}
+  - name: drone_dummy_Frame_3
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 4
+      width: 15
+      height: 19
+    spriteID: 43b48c902279bfa4186e971fc80a55f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 4}
+  - name: drone_dummy_Frame_4
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 31
+      width: 15
+      height: 19
+    spriteID: 82ec3d4169fcf734dbecd8fc893c84cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 31}
+  - name: drone_dummy_Frame_6
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 58
+      width: 15
+      height: 19
+    spriteID: ee07aca916772a749a63e824ee0a7478
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 58}
+  - name: drone_dummy_Frame_7
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 85
+      width: 15
+      height: 19
+    spriteID: 8f66354822967494bb834948245a6cff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 85}
+  - name: drone_dummy_Frame_8
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 112
+      width: 15
+      height: 19
+    spriteID: 87df42448b734514d94f8fa4a86fcbc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 112}
+  - name: drone_dummy_Frame_9
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 139
+      width: 15
+      height: 19
+    spriteID: 770359904f882cb4da209e8bc94924a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 139}
+  - name: drone_dummy_Frame_10
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 166
+      width: 15
+      height: 19
+    spriteID: 6a98d396dc581314cac01d95d908a6c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 166}
+  - name: drone_dummy_Frame_11
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 193
+      width: 15
+      height: 19
+    spriteID: 6a90375cac75e064f91d0efa0044d6bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 193}
+  - name: drone_dummy_Frame_12
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 220
+      width: 15
+      height: 19
+    spriteID: b1fad2f3b91c0bc40baf67998b15364c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 220}
+  - name: drone_dummy_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 4
+      width: 30
+      height: 19
+    spriteID: 6869e3ff580e74a4eb6228fffd9f564c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 4}
+  - name: drone_dummy_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 136
+      width: 26
+      height: 19
+    spriteID: bd7240b4fcbfd7a46b39b1fc1688a163
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 136}
+  - name: drone_dummy_Frame_15
+    originalName: 
+    pivot: {x: 0.47058824, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 114
+      width: 17
+      height: 19
+    spriteID: 8b575ef7d5639eb459e00da4bc97191c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 114}
+  - name: drone_dummy_Frame_16
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 4
+      width: 15
+      height: 19
+    spriteID: ac14d16b736942f4baa4dedb12cabad5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 4}
+  - name: drone_dummy_Frame_17
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 31
+      width: 15
+      height: 19
+    spriteID: 315de805352cf0643ab5ece91408e8b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 31}
+  - name: drone_dummy_Frame_18
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 141
+      width: 15
+      height: 21
+    spriteID: 034bd37bfbbf6db479404437873614f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 141}
+  - name: drone_dummy_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: -0.21739131}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 105
+      width: 22
+      height: 23
+    spriteID: e5e9557d80b4b1140a7e0cf7af301b79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 105}
+  - name: drone_dummy_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 31
+      width: 30
+      height: 19
+    spriteID: 27e70ec64ee2e744392ffb2d689b6aa2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 31}
+  - name: drone_dummy_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 58
+      width: 30
+      height: 19
+    spriteID: 3d467ffc328e35746a1279ae6c44760e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 58}
+  - name: drone_dummy_Frame_23
+    originalName: 
+    pivot: {x: 0.53333336, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 58
+      width: 15
+      height: 19
+    spriteID: 4475f41292a199c48a9ceec343b3d811
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 58}
+  - name: drone_dummy_Frame_24
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 85
+      width: 15
+      height: 19
+    spriteID: 54635f3dfcedb5040aa83617401b63c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 85}
+  - name: drone_dummy_Frame_25
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.42105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 112
+      width: 15
+      height: 19
+    spriteID: 2b8e60d9d8c43014ab85789c9a03b07b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 112}
+  - name: drone_dummy_Frame_26
+    originalName: 
+    pivot: {x: 0.40000004, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 139
+      width: 15
+      height: 19
+    spriteID: 403046a4e24fc6341b978d825150948e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 139}
+  - name: drone_dummy_Frame_28
+    originalName: 
+    pivot: {x: 0.53333336, y: -0.47368422}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 166
+      width: 15
+      height: 19
+    spriteID: 3c64a6127045ec0468f209af60ac28ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 166}
+  - name: drone_dummy_Frame_29
+    originalName: 
+    pivot: {x: 0.5294118, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 85
+      width: 17
+      height: 21
+    spriteID: 6ffdf7a16b459bb469e9ae2d76c26bc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 85}
+  - name: drone_dummy_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 223
+      width: 18
+      height: 21
+    spriteID: a4f4bdd274bb810458c76a35386a2608
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 223}
+  - name: drone_dummy_Frame_31
+    originalName: 
+    pivot: {x: 0.40909094, y: -0.3181818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 163
+      width: 22
+      height: 22
+    spriteID: cc4c066b46d95554381f3819625c20cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 163}
+  - name: drone_dummy_Frame_32
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 73
+      width: 26
+      height: 24
+    spriteID: 774842295aa031c49bfd09ddd73ae3ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 73}
+  - name: drone_dummy_Frame_33
+    originalName: 
+    pivot: {x: 0.46428573, y: -0.15384616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 39
+      width: 28
+      height: 26
+    spriteID: 3132587120abd904baaf9d6e5a3b38ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 39}
+  - name: drone_dummy_Frame_34
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.11111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 29
+      height: 27
+    spriteID: d70f086e77db2ae42b5e937fea630dc7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: drone_dummy_Frame_35
+    originalName: 
+    pivot: {x: 0.3181818, y: -0.36363637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 193
+      width: 22
+      height: 22
+    spriteID: 7fd77241ba5397d458d5ab1da6d6371e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 193}
+  - name: drone_dummy_Frame_36
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.36842105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 193
+      width: 15
+      height: 19
+    spriteID: 1834e9e5c36335549804ea62004937f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 193}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1373188803
+    name: drone_dummy
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: drone_dummy_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 763d173f709647447950da1183ad1676
+    - name: drone_dummy_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 12339ebec677d9a418de51c85d8ac969
+    - name: drone_dummy_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 96d2e7a7aed6dff458b45986199fbe3b
+    - name: drone_dummy_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 43b48c902279bfa4186e971fc80a55f6
+    - name: drone_dummy_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 82ec3d4169fcf734dbecd8fc893c84cc
+    - name: drone_dummy_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: ee07aca916772a749a63e824ee0a7478
+    - name: drone_dummy_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 8f66354822967494bb834948245a6cff
+    - name: drone_dummy_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 87df42448b734514d94f8fa4a86fcbc3
+    - name: drone_dummy_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 770359904f882cb4da209e8bc94924a5
+    - name: drone_dummy_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 6a98d396dc581314cac01d95d908a6c7
+    - name: drone_dummy_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 6a90375cac75e064f91d0efa0044d6bb
+    - name: drone_dummy_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: b1fad2f3b91c0bc40baf67998b15364c
+    - name: drone_dummy_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 1
+        y: 9
+        width: 30
+        height: 19
+      spriteId: 6869e3ff580e74a4eb6228fffd9f564c
+    - name: drone_dummy_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 3
+        y: 9
+        width: 26
+        height: 19
+      spriteId: bd7240b4fcbfd7a46b39b1fc1688a163
+    - name: drone_dummy_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 8
+        y: 9
+        width: 17
+        height: 19
+      spriteId: 8b575ef7d5639eb459e00da4bc97191c
+    - name: drone_dummy_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: ac14d16b736942f4baa4dedb12cabad5
+    - name: drone_dummy_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 315de805352cf0643ab5ece91408e8b6
+    - name: drone_dummy_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 9
+        y: 7
+        width: 15
+        height: 21
+      spriteId: 034bd37bfbbf6db479404437873614f9
+    - name: drone_dummy_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 5
+        y: 5
+        width: 22
+        height: 23
+      spriteId: e5e9557d80b4b1140a7e0cf7af301b79
+    - name: drone_dummy_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 1
+        y: 9
+        width: 30
+        height: 19
+      spriteId: 27e70ec64ee2e744392ffb2d689b6aa2
+    - name: drone_dummy_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 1
+        y: 9
+        width: 30
+        height: 19
+      spriteId: 3d467ffc328e35746a1279ae6c44760e
+    - name: drone_dummy_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 8
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 4475f41292a199c48a9ceec343b3d811
+    - name: drone_dummy_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 9
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 54635f3dfcedb5040aa83617401b63c5
+    - name: drone_dummy_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 9
+        y: 8
+        width: 15
+        height: 19
+      spriteId: 2b8e60d9d8c43014ab85789c9a03b07b
+    - name: drone_dummy_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 10
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 403046a4e24fc6341b978d825150948e
+    - name: drone_dummy_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 8
+        y: 9
+        width: 15
+        height: 19
+      spriteId: 3c64a6127045ec0468f209af60ac28ee
+    - name: drone_dummy_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 7
+        y: 7
+        width: 17
+        height: 21
+      spriteId: 6ffdf7a16b459bb469e9ae2d76c26bc3
+    - name: drone_dummy_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 7
+        y: 6
+        width: 18
+        height: 21
+      spriteId: a4f4bdd274bb810458c76a35386a2608
+    - name: drone_dummy_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 7
+        y: 7
+        width: 22
+        height: 22
+      spriteId: cc4c066b46d95554381f3819625c20cf
+    - name: drone_dummy_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 4
+        y: 5
+        width: 26
+        height: 24
+      spriteId: 774842295aa031c49bfd09ddd73ae3ad
+    - name: drone_dummy_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 3
+        y: 4
+        width: 28
+        height: 26
+      spriteId: 3132587120abd904baaf9d6e5a3b38ea
+    - name: drone_dummy_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 2
+        y: 3
+        width: 29
+        height: 27
+      spriteId: d70f086e77db2ae42b5e937fea630dc7
+    - name: drone_dummy_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 9
+        y: 8
+        width: 22
+        height: 22
+      spriteId: 7fd77241ba5397d458d5ab1da6d6371e
+    - name: drone_dummy_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 9
+        y: 7
+        width: 15
+        height: 19
+      spriteId: 1834e9e5c36335549804ea62004937f3
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}

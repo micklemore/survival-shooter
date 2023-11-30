@@ -10,9 +10,6 @@ public class PlayerController : MonoBehaviour
     float horizontalMovement;
     float verticalMovement;
 
-    //bool isLookingUp = false;
-    //bool isLookingAtRight = false;
-
     void Update()
     {
 		GetHorizontalMovementInput();

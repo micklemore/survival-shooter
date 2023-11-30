@@ -8,41 +8,53 @@ public class EnemyFSM : StateMachine
 	public EnemyIdle idleState;
 
 	[HideInInspector]
-	public EnemyAttacking attackingState;
-
-	[HideInInspector]
 	public EnemyMoving movingState;
 
 	[HideInInspector]
-	public EnemyPushedBack pushedBack;
+	public EnemyHit hit;
+
+	Enemy enemy;
 
 	void Awake()
 	{
 		this.idleState = new EnemyIdle(this);
-		this.attackingState = new EnemyAttacking(this);
 		this.movingState = new EnemyMoving(this);
-		this.pushedBack = new EnemyPushedBack(this);
+		this.hit = new EnemyHit(this);
 	}
 
-	public override IBaseState GetInitialState()
+	public override BaseState GetInitialState()
 	{
 		return idleState;
 	}
 
+	public override void InitializeStateMachine()
+	{
+		enemy = GetComponent<Enemy>();
+	}
+
 	public EnemyStates GetCurrentState()
 	{
-		if (CurrentState is EnemyAttacking)
-		{
-			return EnemyStates.ATTACKING;
-		} else if (CurrentState is Moving) 
+		if (CurrentState is PlayerMoving) 
 		{
 			return EnemyStates.MOVING;
-		} else if (CurrentState is EnemyPushedBack)
+		} else if (CurrentState is EnemyHit)
 		{
-			return EnemyStates.PUSHED_BACK;
+			return EnemyStates.HIT;
 		} else
 		{
 			return EnemyStates.IDLE;
 		}
+	}
+
+	public override void NotifyOnEnterState(string stateName)
+	{
+		Debug.Log("notify enter state " + stateName);
+		enemy.RefreshAnimationForNewState(stateName);
+	}
+
+	private void OnGUI()
+	{
+		string content = CurrentState != null ? CurrentState.ToString() : "(no current state)";
+		GUILayout.Label($"<color='black'><size=40>{content}</size></color>");
 	}
 }

@@ -60,6 +60,7 @@ public class Projectile : MonoBehaviour, IDamager
 
 	void OnTriggerEnter2D(Collider2D collision)
 	{
+		Debug.Log("ho fatto trigger con " + collision.name);
 		IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
 		if (damageable == null)
 		{
