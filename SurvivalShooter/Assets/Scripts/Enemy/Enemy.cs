@@ -15,6 +15,25 @@ public class Enemy : MonoBehaviour, IDamageable, IDamager
 	float health = 110f;
 
 	[SerializeField]
+	float attackDamage;
+
+	[SerializeField]
+	float pushbackForce;
+
+	[SerializeField]
+	float attackDistance = 3f;
+	public float AttackDistance => attackDistance;
+
+    [SerializeField]
+	float pushbackMultiplier = 0.1f;
+
+	[SerializeField]
+	float circleColliderDistance = 0.2f;
+
+	[SerializeField]
+	float circleColliderRadius = 0.4f;
+
+	[SerializeField]
 	Animator animator;
 
 	EnemyFSM enemyFSM;
@@ -33,6 +52,11 @@ public class Enemy : MonoBehaviour, IDamageable, IDamager
 		enemyFSM = GetComponent<EnemyFSM>();
 	}
 
+	void OnDrawGizmos()
+	{
+		Gizmos.DrawWireSphere(new Vector2(transform.position.x , transform.position.y) * circleColliderDistance, circleColliderRadius);
+	}
+
 	public FactionEnum GetFaction() => faction;
 
 	public HitResult TakeDamage(DamageObject damageObject)
@@ -43,12 +67,11 @@ public class Enemy : MonoBehaviour, IDamageable, IDamager
 		if (canBePushedBack)
 		{
 			canBePushedBack = false;
-			enemyFSM.ChangeState(enemyFSM.hit);
+			enemyFSM.ChangeState(enemyFSM.hitState);
 			ApplyPushBackForceToSelf(damageObject.PushDirection, damageObject.PushForce, damageObject.TimerUntilNextShoot);
 		}
 
 		health -= damageObject.DamageAmount;
-		Debug.Log("Health = " + health);
 
 		if (!isDead && health <= 0)
 		{
@@ -68,8 +91,7 @@ public class Enemy : MonoBehaviour, IDamageable, IDamager
 
 	void ApplyPushBackForceToSelf(Vector3 pushDirection, float pushForce, float timerUntilNextPushback)
 	{
-		Debug.Log("pushdirection is " + pushDirection + " e force is " + pushForce);
-		rb.AddForce(pushDirection.normalized * pushForce, ForceMode2D.Impulse);
+		rb.AddForce(pushDirection.normalized * pushForce * pushbackMultiplier, ForceMode2D.Impulse);
 		StartCoroutine(WaitForNextPushback(timerUntilNextPushback));
 	}
 
@@ -87,43 +109,13 @@ public class Enemy : MonoBehaviour, IDamageable, IDamager
 		if (!(enemyFSM.GetCurrentState() == EnemyStates.HIT))
 		{
 			transform.position += (Vector3)direction * speed * Time.fixedDeltaTime;
-			enemyFSM.ChangeState(enemyFSM.movingState);
+			enemyFSM.ChangeState(enemyFSM.idleState);
 		}
 	}
 
-	public void Attack(Transform playerTransform)
+	public void Attack(Vector3 playerPosition)
 	{
-		Vector2 circleColliderPosition = GetCircleColliderPosition(playerTransform);
-		Collider2D[] collisions = Physics2D.OverlapCircleAll(circleColliderPosition, 0.5f);
-
-		foreach (Collider2D collision in collisions)
-		{
-			IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
-			if (damageable != null && faction != damageable.GetFaction())
-			{
-				Debug.Log("ho colpito un " + collision.gameObject.name);
-				ContactPoint2D[] contactPoints = new ContactPoint2D[1];
-				collision.GetContacts(contactPoints);
-
-				Vector3 pushDirection = (Vector3)contactPoints[0].point - (Vector3)circleColliderPosition;
-				ApplyDamageToDamageables(damageable, pushDirection);
-			}
-		}
-	}
-
-	public void ApplyDamageToDamageables(IDamageable damageable, Vector3 pushDirection)
-	{
-		//DamageObject damageObject = new DamageObject(damage, pushDirection, base.pushbackForce, base.timerUntilNextPushback);
-		//HitResult hitResult = damageable.TakeDamage(damageObject);
-
-		//Debug.Log("ho fatto " + hitResult.Damage + "danni");
-	}
-
-	Vector2 GetCircleColliderPosition(Transform playerTransform)
-	{
-		Vector2 directionToPlayer = (Vector2)(playerTransform.position - transform.position).normalized;
-		Vector2 circleColliderPosition = (Vector2)transform.position + directionToPlayer * 3;
-		return circleColliderPosition;
+		enemyFSM.ChangeState(enemyFSM.attackState, faction, transform.position, playerPosition, circleColliderDistance, circleColliderRadius, attackDamage, pushbackForce);
 	}
 
 	public void SetAITargetTransform(Transform targetTransform)

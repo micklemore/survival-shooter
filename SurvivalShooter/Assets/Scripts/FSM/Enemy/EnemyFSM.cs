@@ -11,7 +11,10 @@ public class EnemyFSM : StateMachine
 	public EnemyMoving movingState;
 
 	[HideInInspector]
-	public EnemyHit hit;
+	public EnemyHit hitState;
+
+	[HideInInspector]
+	public EnemyAttack attackState;
 
 	Enemy enemy;
 
@@ -19,7 +22,8 @@ public class EnemyFSM : StateMachine
 	{
 		this.idleState = new EnemyIdle(this);
 		this.movingState = new EnemyMoving(this);
-		this.hit = new EnemyHit(this);
+		this.hitState = new EnemyHit(this);
+		this.attackState = new EnemyAttack(this);
 	}
 
 	public override BaseState GetInitialState()
@@ -34,27 +38,23 @@ public class EnemyFSM : StateMachine
 
 	public EnemyStates GetCurrentState()
 	{
-		if (CurrentState is PlayerMoving) 
+		if (CurrentState is EnemyMoving) 
 		{
 			return EnemyStates.MOVING;
 		} else if (CurrentState is EnemyHit)
 		{
 			return EnemyStates.HIT;
-		} else
+		} else if (CurrentState is EnemyIdle)
 		{
 			return EnemyStates.IDLE;
+		} else
+		{
+			return EnemyStates.ATTACKING;
 		}
 	}
 
 	public override void NotifyOnEnterState(string stateName)
 	{
-		Debug.Log("notify enter state " + stateName);
 		enemy.RefreshAnimationForNewState(stateName);
-	}
-
-	private void OnGUI()
-	{
-		string content = CurrentState != null ? CurrentState.ToString() : "(no current state)";
-		GUILayout.Label($"<color='black'><size=40>{content}</size></color>");
 	}
 }

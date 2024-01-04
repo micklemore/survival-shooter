@@ -1,3 +1,4 @@
+using SmartMVC;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
@@ -13,13 +14,20 @@ public class Player : MonoBehaviour, IDamageable
 	Transform weaponSocketLeftTransform;
 
 	[SerializeField]
-	float playerSpeed = 10f;
+	float speed = 10f;
+
+	[SerializeField]
+	float totalHealth = 300f;
 
 	[SerializeField]
 	FactionEnum faction = FactionEnum.PLAYER_FACTION;
 
 	[SerializeField]
 	Animator animator;
+
+	float actualHealth;
+
+	bool isDead = false;
 
 	bool hasARechargableWeapon => actualEquippedWeapon != null && actualEquippedWeapon.Id != 0;
 
@@ -45,12 +53,16 @@ public class Player : MonoBehaviour, IDamageable
 	void Start()
 	{
 		playerFSM = GetComponent<PlayerFSM>();
-		EquipWeapon(0); //0 is id of melee weapon
+		
+		actualHealth = totalHealth;
+		BaseApplication.Notify((int)EventsEnum.PLAYER_HEALTH_MODIFY, this, actualHealth, totalHealth);
+
+		EquipWeapon(0); //0 is melee weapon id
 	}
 
 	public void Move(Vector2 direction)
     {
-		transform.position += (Vector3)direction * Time.fixedDeltaTime * playerSpeed;
+		transform.position += (Vector3)direction * Time.fixedDeltaTime * speed;
 		if (direction.x == 0 && direction.y == 0 && playerFSM.GetCurrentState() == PlayerStates.MOVING)
 		{
 			playerFSM.ChangeState(playerFSM.idleState);
@@ -117,8 +129,25 @@ public class Player : MonoBehaviour, IDamageable
 	{
 		HitResult hitResult = new HitResult();
 		hitResult.SetDamage(damageObject.DamageAmount);
+		actualHealth -= damageObject.DamageAmount;
+
+		BaseApplication.Notify((int)EventsEnum.PLAYER_HEALTH_MODIFY, this, actualHealth, totalHealth);
+
+		Debug.Log("Player healt: " + actualHealth);
+
+		if (!isDead && actualHealth <= 0)
+		{
+			isDead = true;
+			HandleDeath();
+		}
+		hitResult.SetDead(isDead);
 		return hitResult;
-		//health -= damageAmount
+	}
+
+	private void HandleDeath()
+	{
+		Debug.Log("Player is dead");
+		EventHandler.instance.EndGameNotify();
 	}
 
 	public Weapon GetEquippedWeapon()

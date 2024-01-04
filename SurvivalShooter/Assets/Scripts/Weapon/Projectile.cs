@@ -27,7 +27,7 @@ public class Projectile : MonoBehaviour, IDamager
 	{
 		transform.position += projectileDirection.normalized * speed * Time.fixedDeltaTime;
 		
-		CheckIfOProjectileHasReachedMaxRange();
+		CheckIfProjectileHasReachedMaxRange();
 	}
 
 	public void FireProjectile(Weapon owner, Vector3 directionToFollow, float damage, float speed, float range, FactionEnum faction, float pushbackForce, float timerUntilNextPushback)
@@ -50,7 +50,7 @@ public class Projectile : MonoBehaviour, IDamager
 		this.timerUntilNextPushback = timerUntilNextPushback;
 	}
 
-	void CheckIfOProjectileHasReachedMaxRange()
+	void CheckIfProjectileHasReachedMaxRange()
 	{
 		if ((transform.position - startPosition).sqrMagnitude >= range * range)
 		{

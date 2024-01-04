@@ -11,7 +11,7 @@ public abstract class BaseState
         this.stateMachine = stateMachine;
     }
 
-	public virtual void OnEnter()
+	public virtual void OnEnter(params object[] data)
     {
 		stateMachine.NotifyOnEnterState(GetName());
 	}

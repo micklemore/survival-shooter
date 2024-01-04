@@ -1,3 +1,4 @@
+using SmartMVC;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -94,6 +95,8 @@ public class HordeManager : MonoBehaviour
 
 	public void HandleEnemyDeath(Enemy enemy)
 	{
+		BaseApplication.Notify((int)EventsEnum.ENEMY_DEATH, this);
+
 		enemy.enemyDeathNotify -= HandleEnemyDeath;
 		
 		currentEnemiesInPlay--;

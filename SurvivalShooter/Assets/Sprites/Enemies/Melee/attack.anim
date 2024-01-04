@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: recovery
+  m_Name: attack
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -61,19 +61,43 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+    pptrCurveMapping:
+    - {fileID: 6540924920992327564, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: 3023349136618046739, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: 7073710721690620185, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: 1654923047887574607, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: -5206384812931037922, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: 8702878319713908239, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: -5886203684195523404, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: 3972089396797807885, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: 6624326334097559173, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: -845995225280455024, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: -4215628367199078783, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: 4063213740323305501, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: 107110511871154643, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: -7813893169977107363, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: 6455609722523675739, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
+    - {fileID: 6455609722523675739, guid: 71b875c29ccf12c49970cd96a05adf1b, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.3100001
+    m_StopTime: 1.31
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0

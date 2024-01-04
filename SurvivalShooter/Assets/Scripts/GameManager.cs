@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
+    float restartGameTimer = 3f;
+
     void Start()
     {
         EventHandler.instance.endGameDelegate += OnEndGameNotify;
@@ -18,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator RestartGame()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(restartGameTimer);
 		SceneManager.LoadScene(0);
 	}
 }

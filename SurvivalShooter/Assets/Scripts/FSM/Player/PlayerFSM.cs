@@ -39,15 +39,8 @@ public class PlayerFSM: StateMachine
 		}
 	}
 
-	//private void OnGUI()
-	//{
-	//	string content = CurrentState != null ? CurrentState.ToString() : "(no current state)";
-	//	GUILayout.Label($"<color='black'><size=40>{content}</size></color>");
-	//}
-
 	public override void NotifyOnEnterState(string stateName)
 	{
-		Debug.Log("notify enter state " + stateName);
 		player.RefreshAnimationForNewState(stateName);
 	}
 }

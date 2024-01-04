@@ -57,9 +57,9 @@ public class EnemyAI : MonoBehaviour
 
     void FixedUpdate()
     {
-        if ((targetTransform.position - transform.position).sqrMagnitude <= 5)
+        if ((targetTransform.position - transform.position).sqrMagnitude <= enemy.AttackDistance)
         {
-            enemy.Attack(targetTransform);
+            enemy.Attack(targetTransform.position);
         }
         currentTimer += Time.fixedDeltaTime;
         if (currentTimer >= timerForNextPathCalculation)

@@ -25,7 +25,7 @@ public class WeaponRotator : MonoBehaviour
 		transform.rotation = rotation;
 
 		Vector3 relativePositionToOwner = Camera.main.ScreenToWorldPoint(Input.mousePosition) - weapon.Owner.transform.position;
-		if ((relativePositionToOwner.x < 0.001 && isFacingRight) || (relativePositionToOwner.x > 0.001 && !isFacingRight))
+		if ((relativePositionToOwner.x < -0.001 && isFacingRight) || (relativePositionToOwner.x > 0.001 && !isFacingRight))
 		{
 			Flip();
 			isFacingRight = !isFacingRight;

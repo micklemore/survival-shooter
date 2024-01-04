@@ -139,9 +139,8 @@ public class Weapon : MonoBehaviour
 
 	protected Vector3 GetDirectionOfFire()
 	{
-		Vector3 directionOfFire = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position);
-		Vector3 spreadDirection = new Vector3(directionOfFire.x *10 + Random.Range(-spread, spread), directionOfFire.y *10 + Random.Range(-spread, spread), 0);
-		return spreadDirection.normalized;
+		Vector3 spreadDirection = new Vector3(transform.right.x + Random.Range(-spread, spread), transform.right.y + Random.Range(-spread, spread), 0);
+		return spreadDirection;
 	}
 
 	void WaitUntilNextFire()

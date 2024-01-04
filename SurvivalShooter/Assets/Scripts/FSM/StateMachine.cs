@@ -11,7 +11,6 @@ public class StateMachine : MonoBehaviour
 	{
 		InitializeStateMachine();
 		currentState = GetInitialState();
-		Debug.Log("current state is " + currentState.ToString());
 		if (currentState != null )
 		{
 			currentState.OnEnter();
@@ -34,12 +33,12 @@ public class StateMachine : MonoBehaviour
 		}
 	}
 
-	public void ChangeState(BaseState newState)
+	public void ChangeState(BaseState newState, params object[] data)
 	{
 		if (currentState == null)
 		{
 			currentState = newState;
-			currentState.OnEnter();
+			currentState.OnEnter(data);
 		}
 		else
 		{
@@ -47,7 +46,7 @@ public class StateMachine : MonoBehaviour
 			{
 				currentState.OnExit();
 				currentState = newState;
-				currentState.OnEnter();
+				currentState.OnEnter(data);
 			}
 		}
 	}
