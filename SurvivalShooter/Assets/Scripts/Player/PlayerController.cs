@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
         DetectMouseClickToFire();
         DetectPickItemInput();
 		DetectReloadInput();
+		DetectMouseScrollInput();
 	}
 
 	void FixedUpdate()
@@ -71,4 +72,16 @@ public class PlayerController : MonoBehaviour
 			player.Attack();
         }
     }
+
+	void DetectMouseScrollInput()
+	{
+		if (Input.mouseScrollDelta.y > 0.1f)
+		{
+			player.ChangeWeapon(1);
+		}
+		else if (Input.mouseScrollDelta.y < -0.1f)
+		{
+			player.ChangeWeapon(-1);
+		}
+	}
 }

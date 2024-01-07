@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour, IDamageable, IDamager
 	float pushbackForce;
 
 	[SerializeField]
-	float attackDistance = 3f;
+	float attackDistance = 0.4f;
 	public float AttackDistance => attackDistance;
 
     [SerializeField]

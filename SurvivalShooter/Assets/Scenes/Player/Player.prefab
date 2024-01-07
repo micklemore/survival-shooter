@@ -216,7 +216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponSocketRightTransform: {fileID: 5114356607823317939}
   weaponSocketLeftTransform: {fileID: 8025520582557493171}
-  playerSpeed: 5
+  speed: 8
+  totalHealth: 1000
   faction: 0
   animator: {fileID: 3570721574498811955}
 --- !u!114 &5114356607185865767

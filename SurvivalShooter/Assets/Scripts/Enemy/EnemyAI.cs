@@ -16,7 +16,7 @@ public class EnemyAI : MonoBehaviour
 
     float currentTimer = 0;
 
-    bool reachedEndOfPath = false;
+    //bool reachedEndOfPath = false;
 
     int currentWaypoint = 0;
 

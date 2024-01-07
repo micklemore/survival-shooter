@@ -39,6 +39,8 @@ public class Player : MonoBehaviour, IDamageable
 
 	Dictionary<int, int> ammunitions = new Dictionary<int, int>();
 
+	List<int> equippedWeaponsIds = new List<int>();
+
 	string lastAnimationLookDirection = "_front";
 
 	string currentStateName;
@@ -55,7 +57,7 @@ public class Player : MonoBehaviour, IDamageable
 		playerFSM = GetComponent<PlayerFSM>();
 		
 		actualHealth = totalHealth;
-		BaseApplication.Notify((int)EventsEnum.PLAYER_HEALTH_MODIFY, this, actualHealth, totalHealth);
+		GameUIApplication.instance.Notify(MVCEvent.GameUIEvent.PLAYER_HEALTH_MODIFY, this, actualHealth, totalHealth);
 
 		EquipWeapon(0); //0 is melee weapon id
 	}
@@ -99,10 +101,42 @@ public class Player : MonoBehaviour, IDamageable
 				weapon.Equip(weaponSocketRightTransform, weaponSocketLeftTransform, weaponSO, this);
 				actualEquippedWeapon = weapon;
 
+				StoreNewWeapon(weaponId);
+
 				return true;
 			}
 		}
 		return false;
+	}
+
+	void StoreNewWeapon(int weaponId)
+	{
+		if (!equippedWeaponsIds.Contains(weaponId))
+		{
+			equippedWeaponsIds.Add(weaponId);
+		}
+	}
+
+	public void ChangeWeapon(int value)
+	{
+		if (equippedWeaponsIds.Count > 1)
+		{
+			int weaponIndex = equippedWeaponsIds.IndexOf(actualEquippedWeapon.Id);
+
+			if (value > 0 && weaponIndex + 1 == equippedWeaponsIds.Count)
+			{
+				weaponIndex = 0;
+			}
+			else if (value < 0 && weaponIndex == 0)
+			{
+				weaponIndex = equippedWeaponsIds.Count - 1;
+			}
+			else
+			{
+				weaponIndex = value > 0 ? weaponIndex + 1 : weaponIndex - 1;
+			}
+			EquipWeapon(equippedWeaponsIds[weaponIndex]);
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D collision)
@@ -131,7 +165,7 @@ public class Player : MonoBehaviour, IDamageable
 		hitResult.SetDamage(damageObject.DamageAmount);
 		actualHealth -= damageObject.DamageAmount;
 
-		BaseApplication.Notify((int)EventsEnum.PLAYER_HEALTH_MODIFY, this, actualHealth, totalHealth);
+		GameUIApplication.instance.Notify(MVCEvent.GameUIEvent.PLAYER_HEALTH_MODIFY, this, actualHealth, totalHealth);
 
 		Debug.Log("Player healt: " + actualHealth);
 
@@ -187,15 +221,8 @@ public class Player : MonoBehaviour, IDamageable
 		{
 			ammunitions.Add(ammunition.WeaponIdCorrespondingToThisAmmo, ammunition.Amount);
 		}
+		GameUIApplication.instance.Notify(MVCEvent.GameUIEvent.AMMUNITION_IN_INVENTORY_UPDATE, ammunitions);
 		Destroy(ammunition.gameObject);
-
-		Debug.Log("ho raccolto " + ammunition.Amount + " munizioni di tipo " + ammunition.WeaponIdCorrespondingToThisAmmo);
-		Debug.Log("totale munizioni : ");
-
-		foreach (int key in ammunitions.Keys)
-		{
-			Debug.Log("id " + key + " amount " + ammunitions[key]);
-		}
 	}
 
 	IPickable GetNearestItem()
@@ -227,6 +254,7 @@ public class Player : MonoBehaviour, IDamageable
 		{
 			int reloadedProjectiles = actualEquippedWeapon.Reload(ammunitions[actualEquippedWeapon.Id]);
 			ammunitions[actualEquippedWeapon.Id] = Mathf.Clamp(ammunitions[actualEquippedWeapon.Id] - reloadedProjectiles, 0, ammunitions[actualEquippedWeapon.Id]);
+			GameUIApplication.instance.Notify(MVCEvent.GameUIEvent.AMMUNITION_IN_INVENTORY_UPDATE, ammunitions);
 
 			Debug.Log("ho ricaricato, quindi totale munizioni : ");
 			foreach (int key in ammunitions.Keys)

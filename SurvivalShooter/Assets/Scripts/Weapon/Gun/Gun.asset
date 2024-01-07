@@ -16,10 +16,10 @@ MonoBehaviour:
   id: 1
   damage: 20
   projectileSpeed: 15
-  rangeDistance: 25
+  rangeDistance: 7
   shootSpeed: 0.1
   numberOfProjectileToShoot: 1
-  spread: 0.1
-  chargerCapacity: 250000
-  pushbackForce: 2
+  spread: 0.08
+  chargerCapacity: 100
+  pushbackForce: 1.5
   timerUntilNextPushback: 0.5

@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.starworkgc.smartmvc": {
-      "version": "https://gitlab.com/rikudefuffs/smartmvc.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "ca19899593d5a587f23aa110b27b9b4aa8b91fea"
-    },
     "com.unity.2d.animation": {
       "version": "8.0.5",
       "depth": 1,

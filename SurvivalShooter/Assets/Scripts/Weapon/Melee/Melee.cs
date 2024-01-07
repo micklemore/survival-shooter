@@ -20,8 +20,6 @@ public class Melee : Weapon, IDamager
 	{
 		DamageObject damageObject = new DamageObject(damage, pushDirection, base.pushbackForce, base.timerUntilNextPushback);
 		HitResult hitResult = damageable.TakeDamage(damageObject);
-
-		Debug.Log("ho fatto " + hitResult.Damage + "danni");
 	}
 
 	public override void SpawnProjectilesOrMelee(FactionEnum faction)

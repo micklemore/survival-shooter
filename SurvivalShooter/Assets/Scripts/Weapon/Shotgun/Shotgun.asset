@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon: {fileID: -368176464810542762, guid: 4c1d4ecf6ae98364c858324ee18647c4, type: 3}
   id: 2
-  damage: 10
+  damage: 13
   projectileSpeed: 15
-  rangeDistance: 20
+  rangeDistance: 3.5
   shootSpeed: 0.15
   numberOfProjectileToShoot: 3
-  spread: 0.1
-  chargerCapacity: 1000000
+  spread: 0.14
+  chargerCapacity: 20
   pushbackForce: 2
   timerUntilNextPushback: 0.5

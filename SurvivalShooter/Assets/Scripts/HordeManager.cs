@@ -27,6 +27,8 @@ public class HordeManager : MonoBehaviour
 
 	int currentEnemiesInPlay = 0;
 
+	int hordeNumber = 0;
+
 	void OnDrawGizmosSelected()
 	{
 		Gizmos.color = Color.red;
@@ -46,7 +48,10 @@ public class HordeManager : MonoBehaviour
 
     void StartHorde()
     {
+		hordeNumber++;
 		SpawnEnemies(numberOfEnemiesToSpawn);
+		GameUIApplication.instance.Notify(MVCEvent.GameUIEvent.NEW_HORDE_STARTED, hordeNumber);
+		GameUIApplication.instance.Notify(MVCEvent.GameUIEvent.ENEMY_COUNT_MODIFY, numberOfEnemiesToSpawn, numberOfEnemiesToSpawn);
     }
 
 	public void SpawnEnemies(int numberOfEnemiesToSpawn)
@@ -95,11 +100,11 @@ public class HordeManager : MonoBehaviour
 
 	public void HandleEnemyDeath(Enemy enemy)
 	{
-		BaseApplication.Notify((int)EventsEnum.ENEMY_DEATH, this);
-
 		enemy.enemyDeathNotify -= HandleEnemyDeath;
 		
 		currentEnemiesInPlay--;
+
+		GameUIApplication.instance.Notify(MVCEvent.GameUIEvent.ENEMY_COUNT_MODIFY, currentEnemiesInPlay, numberOfEnemiesToSpawn);
 
 		if (currentEnemiesInPlay == 0)
 		{
